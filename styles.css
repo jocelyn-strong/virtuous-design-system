@@ -1,30 +1,89 @@
 /* ==========================================================================
+ Colors
+========================================================================== */
+
+html {
+	--color-blue: #003366;
+	--color-light-blue: #3f5c94;
+	--color-dark-blue: #000c3b;
+	--color-teal: #b2dfdb;
+	--color-light-teal: #e5ffff;
+	--color-dark-teal: #82ada9;
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-gray: #6d6d6d;
+	--color-light-gray: #d3d3d3;
+}
+
+/* ==========================================================================
  Typography
 ========================================================================== */
 
 html {
-	color: #000000;
+	--font-primary: 'Roboto', sans-serif;
+	--font-secondary: 'Montserrat', sans-serif;
+	font-family: var(--font-primary);
+	font-size: 16px;
 }
+
+main {
+	margin: auto;
+	max-width: 40rem;
+}
+
 a {
-	color: #829cd0;
+	font-family: var(--font-secondary);
 	text-decoration: none;
 }
 
-nav a {
-	color: #ffffff;
+.site-logo {
+	color: var(--color-white);
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-secondary);
+}
+
+h1 {
+	font-size: 1.75rem;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.2;
+}
+
 
 /* ==========================================================================
  Header Component
 ========================================================================== */
 
 header {
-	background-color: #000b4f;
+	background-color: var(--color-dark-blue);
 	padding: 2rem;
+	text-align: center;
 }
 
 nav ul {
 	text-align: center;
+}
+
+nav a:link {
+	color: var(--color-white);
+}
+
+nav a:visited {
+	color: var(--color-white);
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav a:active {
+	color: var(--color-dark-teal);
 }
 
 /* ==========================================================================
@@ -32,14 +91,20 @@ nav ul {
 ========================================================================== */
 
 footer {
-	background-color: #FF7043;
-	color: #ffffff;
+	background-color: var(--color-dark-teal);
+	color: var(--color-white);
 	padding: 2rem;
 }
 
 nav li {
 	display: inline;
-	padding: 10px 10px;
+	padding: 10px;
 }
 
+/* ==========================================================================
+ Examples
+========================================================================== */
 
+.example-font-secondary {
+	font-family: var(--font-secondary);
+}
