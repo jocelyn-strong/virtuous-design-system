@@ -23,7 +23,7 @@ html {
 	--font-primary: 'Roboto', sans-serif;
 	--font-secondary: 'Montserrat', sans-serif;
 
-	--margin-standard: 2.5rem 0 .75rem;
+	--margin-standard: 1.5rem 0 .75rem;
 
 	--size-ratio: 1.1;
 	--size-six-up: calc( var(--size-five-up) * var(--size-ratio) );
@@ -241,7 +241,7 @@ nav li {
 ========================================================================== */
 
 figure {
-	padding: 0 20px;
+	padding: 0 20px 20px;
 	border-color: var(--color-light-gray);
 	border-style: solid;
 	border-width: 1px;
@@ -263,4 +263,64 @@ figure {
 	font-family: var(--font-primary);
 	font-weight: 100;
 	font-style: italic;
+}
+
+/*Components Examples*/
+
+.link-button {
+	background-color: var(--color-blue);
+	border-radius: 10px;
+	padding: 1rem;
+	color: var(--color-white);
+	font-size: var(--size-one-up);
+	display: inline-block;
+	text-align: center;
+}
+
+.link-button:hover {
+	background-color: var(--color-light-blue);
+	transition: background-color 0.2s ease;
+}
+
+.link-button:focus {
+	outline: 5px solid var(--color-light-gray);
+	outline-offset: 4px;
+}
+
+.link-button:active {
+	outline: none;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.link-button-hero {
+	background-color: var(--color-dark-teal);
+	padding: 1.3rem;
+	font-weight: 700;
+	font-size: var(--size-three-up);
+}
+
+.link-button-hero:hover {
+	background-color: var(--color-teal);
+}
+
+.link-button-tertiary {
+	background-color: var(--color-gray);
+	font-size: var(--size-one-down);
+}
+
+.link-button-tertiary:hover {
+	background-color: var(--color-light-gray);
+}
+
+details summary {
+	padding-top: 20px;
+	font-family: var(--font-secondary);
+	font-size: var(--size-two-up);
+	font-weight: bold;
+}
+
+@media (min-width: 600px) {
+	.link-button-hero {
+		padding: 1.5rem;
+	}
 }
