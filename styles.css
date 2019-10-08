@@ -88,8 +88,8 @@ h4 {
 }
 
 h5 {
-	font-size: var(--size-one-up);
 	color: var(--color-gray);
+	font-size: var(--size-one-up);
 	font-weight: 400;
 }
 
@@ -304,13 +304,13 @@ cite {
 /*Components Examples*/
 
 .link-button, .link-button:visited {
-	margin-top: .5rem;
-	font-family: var(--font-secondary);
 	background-color: var(--color-blue);
 	border-radius: 20px;
 	color: var(--color-white);
 	display: inline-block;
+	font-family: var(--font-secondary);
 	font-size: var(--size-one-up);
+	margin-top: .5rem;
 	padding: 1rem;
 	text-align: center;
 	transition: background-color 0.2s ease;
@@ -318,8 +318,8 @@ cite {
 
 .link-button:hover {
 	background-color: var(--color-light-blue);
-	transition: background-color 0.2s ease;
 	text-decoration: none;
+	transition: background-color 0.2s ease;
 }
 
 .link-button:focus {
