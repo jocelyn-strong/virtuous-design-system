@@ -39,15 +39,15 @@
 
 		<figure>
 
-			<h3>Hero</h3>
+			<h4>Hero</h4>
 
 			<a href="" class="link-button link-button-hero">Hero Button</a>
 
-			<h3>Primary</h3>
+			<h4>Primary</h4>
 
 			<a href="" class="link-button">Primary Button</a>
 
-			<h3>Tertiary</h3>
+			<h4>Tertiary</h4>
 
 			<a href="" class="link-button link-button-tertiary">Tertiary Button</a>
 
@@ -95,6 +95,22 @@
 
 		</figure>
 
+		<h2>Modal Dialog</h2>
+
+		<figure>
+
+			<button id="open-modal" type="button">Open Modal</button>
+
+			<dialog id="modal-demo">
+
+				<h3>Modal Heading</h3>
+
+				<p>Here is an example of the contents that will be revealed when a modal is opened.</p>
+				
+			</dialog>
+
+		</figure>
+
 	</main>
 
 	<footer>
@@ -116,6 +132,25 @@
 		</nav>
 
 	</footer>
+
+	<script>
+	document.addEventListener('DOMContentLoaded', function(){
+
+	const modal = document.querySelector('dialog');
+	const open = document.getElementById('open-modal');
+
+	open.addEventListener('click', () => {
+	modal.showModal();
+	});
+
+	modal.addEventListener('click', event => {
+	if (event.target === modal) {
+	modal.close('cancelled');
+	}
+	});
+
+	});
+	</script>
 
 </body>
 
