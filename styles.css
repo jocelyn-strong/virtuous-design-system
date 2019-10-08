@@ -380,7 +380,7 @@ dialog::backdrop {
 }
 
 dialog[open] {
-	animation: fade-in 1s ease-out;
+	animation: fade-in .75s ease-out;
 }
 
 @keyframes fade-in {
