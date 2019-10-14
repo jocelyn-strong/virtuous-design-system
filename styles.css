@@ -20,6 +20,8 @@ html {
 ========================================================================== */
 
 html {
+	--primary-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+
 	--font-primary: 'Roboto', sans-serif;
 	--font-secondary: 'Montserrat', sans-serif;
 
@@ -153,7 +155,7 @@ ol {
 blockquote {
 	background: var(--color-dark-blue);
 	border-left: 8px solid var(--color-light-blue) ;
-	border-radius: 15px;
+	border-radius: 1rem;
 	color: var(--color-white);
 	font-family: var(--font-secondary);
 	font-size: var(--size-two-up);
@@ -246,7 +248,7 @@ nav a:hover {
 
 nav a:focus {
 	border: 1px solid var(--color-light-gray);
-	border-radius: 10px;
+	border-radius: 1rem;
 }
 
 nav a:active {
@@ -257,6 +259,7 @@ nav a:active {
 	nav a {
 		display: inline-block;
 	}
+}
 
 
 /* ==========================================================================
@@ -280,10 +283,10 @@ footer h3 {
 
 figure {
 	border-color: var(--color-light-gray);
-	border-radius: 10px;
+	border-radius: 1rem;
 	border-style: solid;
 	border-width: 1px;
-	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	box-shadow: var(--primary-box-shadow);
 	padding: 10px 20px 10px;
 }
 
@@ -310,11 +313,15 @@ cite {
 	font-weight: 100;
 }
 
-/*Components Examples*/
+/* ==========================================================================
+ Components Examples
+========================================================================== */
+
+/* Buttons */
 
 .link-button, .link-button:visited {
 	background-color: var(--color-blue);
-	border-radius: 20px;
+	border-radius: 1rem;
 	color: var(--color-white);
 	display: inline-block;
 	font-family: var(--font-secondary);
@@ -337,7 +344,7 @@ cite {
 }
 
 .link-button:active {
-	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	box-shadow: var(--primary-box-shadow);
 	outline: none;
 }
 
@@ -365,6 +372,8 @@ cite {
 	color: var(--color-white);
 }
 
+/* Accordions */
+
 details summary {
 	font-family: var(--font-secondary);
 	font-size: var(--size-two-up);
@@ -375,7 +384,7 @@ details summary {
 dialog {
 	border: 1px solid var(--color-light-gray);
 	border-radius: 1rem;
-	box-shadow: 1px 4px 4px rgba(0, 0, 0, .5);
+	box-shadow: var(--primary-box-shadow);
 	padding: 2rem;
 }
 
