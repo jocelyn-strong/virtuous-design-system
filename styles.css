@@ -385,7 +385,7 @@ details summary {
 	font-family: var(--font-secondary);
 	font-size: var(--size-two-up);
 	font-weight: bold;
-	padding-top: 20px;
+	padding: 1rem 0;
 }
 
 dialog {
@@ -442,7 +442,6 @@ label {
 
 textarea {
 	min-height: 5rem;
-	min-width: 75%;
 }
 
 input:focus, select:focus, textarea:focus {
@@ -470,7 +469,18 @@ input:focus, select:focus, textarea:focus {
 }
 
 input[disabled] {
-	opacity: .5;
+	background-color: var(--color-light-gray);
+	opacity: .75;
+}
+
+textarea[disabled] {
+	opacity: .75;
+	background-color: var(--color-light-gray);
+}
+
+select[disabled] {
+	opacity: .75;
+	background-color: var(--color-light-gray);
 }
 
 input[type="submit"] {

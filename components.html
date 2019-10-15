@@ -143,6 +143,13 @@
 				<label for="form-input-textarea">Label</label>
 				<textarea id="form-input-textarea" name="textarea-input" placeholder="Type your message here"></textarea>
 
+				<label for="form-input-textarea">Label</label>
+				<textarea id="form-input-textarea" name="textarea-input" placeholder="Type your message here" disabled></textarea>
+
+				<label for="form-input-textarea">Label</label>
+				<textarea id="form-input-textarea" class="error-state" name="textarea-input" placeholder="Type your message here" required></textarea>
+				<p class="error-message">Please fill out this field</p>
+
 			</form>
 
 		</figure>
@@ -151,13 +158,35 @@
 
 		<figure>
 
-			<label for="form-input-select">Label</label>
-			<select id="form-input-select" name="select-input">
-				<option value="" disabled hidden selected>Please Select</option>
-				<option>Option 1</option>
-				<option>Option 2</option>
-				<option>Option 3</option>
-			</select>
+			<form action="">
+
+				<label for="form-input-select">Label</label>
+				<select id="form-input-select" name="select-input">
+					<option value="" disabled hidden selected>Please Select</option>
+					<option>Option 1</option>
+					<option>Option 2</option>
+					<option>Option 3</option>
+				</select>
+
+				<label for="form-input-select">Label</label>
+				<select id="form-input-select" name="select-input" disabled>
+					<option value="" disabled hidden selected>Please Select</option>
+					<option>Option 1</option>
+					<option>Option 2</option>
+					<option>Option 3</option>
+				</select>
+
+				<label for="form-input-select">Label</label>
+				<select id="form-input-select" class="error-state" name="select-input">
+					<option value="" disabled hidden selected>Please Select</option>
+					<option>Option 1</option>
+					<option>Option 2</option>
+					<option>Option 3</option>
+				</select>
+
+				<p class="error-message">Please make a selection</p>
+
+			</form>
 
 		</figure>
 
@@ -165,9 +194,13 @@
 
 		<figure>
 			
-			<input type="submit">
+			<form action="">
 
-			<button type="submit">Submit</button>
+				<input type="submit">
+
+				<button type="submit">Submit</button>
+
+			</form>
 
 		</figure>
 
