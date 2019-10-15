@@ -257,7 +257,7 @@ nav a:focus {
 }
 
 nav a:active {
-	color: var(--color-dark-teal);
+	color: var(--color-light-teal);
 }
 
 @media (min-width: 600px) {
