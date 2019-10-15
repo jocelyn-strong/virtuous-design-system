@@ -20,7 +20,7 @@ html {
 ========================================================================== */
 
 html {
-	--primary-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	--box-shadow-primary: 1px 2px 4px rgba(0, 0, 0, .5);
 
 	--font-primary: 'Roboto', sans-serif;
 	--font-secondary: 'Montserrat', sans-serif;
@@ -286,8 +286,9 @@ figure {
 	border-radius: 1rem;
 	border-style: solid;
 	border-width: 1px;
-	box-shadow: var(--primary-box-shadow);
+	box-shadow: var(--box-shadow-primary);
 	padding: 10px 20px 10px;
+	margin-bottom: 3rem;
 }
 
 .example-font-secondary {
@@ -344,7 +345,7 @@ cite {
 }
 
 .link-button:active {
-	box-shadow: var(--primary-box-shadow);
+	box-shadow: var(--box-shadow-primary);
 	outline: none;
 }
 
@@ -372,6 +373,12 @@ cite {
 	color: var(--color-white);
 }
 
+@media (min-width: 600px) {
+	.link-button-hero {
+		padding: 1.5rem;
+	}
+}
+
 /* Accordions */
 
 details summary {
@@ -384,7 +391,7 @@ details summary {
 dialog {
 	border: 1px solid var(--color-light-gray);
 	border-radius: 1rem;
-	box-shadow: var(--primary-box-shadow);
+	box-shadow: var(--box-shadow-primary);
 	padding: 2rem;
 }
 
@@ -410,8 +417,84 @@ dialog[open] {
 	
 }
 
-@media (min-width: 600px) {
-	.link-button-hero {
-		padding: 1.5rem;
-	}
+/* ==========================================================================
+ Form Examples
+========================================================================== */
+
+input, select, textarea {
+	border-radius: .5rem;
+	border: 1.5px solid var(--color-light-gray);
+	box-sizing: border-box;
+	color: var(--color-dark-gray);
+	display: inline-block;
+	font-family: var(--font-primary);
+	margin: .2rem 0 1rem;
+	min-width: 50%;
+	padding: 1rem;
+	max-width: 32.5rem;
+}
+
+label {
+	font-family: var(--font-secondary);
+	font-weight: 700;
+	display: block;
+}
+
+textarea {
+	min-height: 5rem;
+	min-width: 75%;
+}
+
+input:focus, select:focus, textarea:focus {
+	border: 2px solid var(--color-light-blue);	
+	box-shadow: var(--box-shadow-primary);		
+	outline: none;	
+}
+
+.form-microcopy {
+	color: var(--color-gray);
+	display: block;
+	font-family: var(--font-secondary);
+	margin-top: .25rem;
+}
+
+.error-message {
+	color: var(--color-dark-teal);
+	display: inline;
+	font-family: var(--font-secondary);
+	font-size: var(--size-one-down);
+}
+
+.error-state {
+	border: 2px solid var(--color-dark-teal);	
+}
+
+input[disabled] {
+	opacity: .5;
+}
+
+input[type="submit"] {
+	background-color: var(--color-blue);
+	border: none;
+	color: white;
+	font-family: var(--font-secondary);
+	font-size: var(--size-two-up);
+	font-weight: bold;
+	min-width: inherit;
+}
+
+input[type="submit"]:hover {
+	background-color: var(--color-light-blue);
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:focus {
+	outline: 2px solid var(--color-light-gray);
+	outline-offset: 4px;
+}
+
+input[type="submit"]:active {
+	box-shadow: var(--box-shadow-primary);
+	outline: none;
 }
