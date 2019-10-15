@@ -205,9 +205,14 @@ blockquote::before {
  Page Layout
 ========================================================================== */
 
+body {
+	margin: 0;
+}
+
 main {
 	margin: 2rem auto;
 	max-width: 40rem;
+	padding: 0 1rem;
 }
 
 
@@ -459,7 +464,7 @@ input:focus, select:focus, textarea:focus {
 
 .error-message {
 	color: var(--color-dark-teal);
-	display: inline;
+	display: block;
 	font-family: var(--font-secondary);
 	font-size: var(--size-one-down);
 }
@@ -507,4 +512,15 @@ input[type="submit"]:focus {
 input[type="submit"]:active {
 	box-shadow: var(--box-shadow-primary);
 	outline: none;
+}
+
+.form-submit {
+	margin: .5rem 0;
+}
+
+@media (min-width: 540px) {
+	.error-message {
+		display: inline;
+		padding-left: .5rem;
+	}
 }
