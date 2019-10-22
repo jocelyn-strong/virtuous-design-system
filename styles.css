@@ -317,6 +317,10 @@ header {
 	color: var(--color-teal);
 }
 
+.secondary-nav ul ul {
+	padding-left: 1rem;
+}
+
 @media (min-width: 600px) {
 	.secondary-nav a {
 		padding: .5rem;
@@ -543,13 +547,14 @@ input, select, textarea {
 }
 
 label {
+	display: block;
 	font-family: var(--font-secondary);
 	font-weight: 700;
-	display: block;
 }
 
 textarea {
 	min-height: 5rem;
+	vertical-align: middle;
 }
 
 input:focus, select:focus, textarea:focus {
