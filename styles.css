@@ -226,46 +226,102 @@ header {
 	text-align: center;
 }
 
-nav ul {
+/* ==========================================================================
+ Site Nav Component
+========================================================================== */
+
+.site-nav ul {
 	padding-left: 0;
 	text-align: center;
 }
 
-nav li {		
+.site-nav li {		
 	display: inline;
 }
 
-nav a {
+.site-nav a {
 	color: var(--color-white);
 	display: block;
 	font-family: var(--font-secondary);
+	font-size: var(--size-two-up);
 	padding: .75rem;
 }
 
-nav a:visited {
+.site-nav a:visited {
 	color: var(--color-white);
 }
 
-nav a:hover {
+.site-nav a:hover {
 	color: var(--color-light-gray);
 	text-decoration: none;
 }
 
-nav a:focus {
+.site-nav a:focus {
 	border: 1px solid var(--color-light-gray);
 	border-radius: 1rem;
 }
 
-nav a:active {
+.site-nav a:active {
 	color: var(--color-light-teal);
 }
 
+.current-page {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.primary-nav-ex {
+	background: var(--color-dark-blue);
+}
+
 @media (min-width: 600px) {
-	nav a {
+	.site-nav a {
 		display: inline-block;
 	}
 }
 
+/* ==========================================================================
+ Secondary Nav Component
+========================================================================== */
+
+.secondary-nav ul {
+	padding-left: 0;
+}
+
+.secondary-nav li {		
+	display: block;
+}
+
+.secondary-nav a {
+	color: var(--color-light-blue);
+	display: block;
+	font-family: var(--font-secondary);
+	padding: 1rem;
+}
+
+.secondary-nav a:visited {
+	color: var(--color-light-blue);
+}
+
+.secondary-nav a:hover {
+	color: var(--color-dark-teal);
+	text-decoration: none;
+}
+
+.secondary-nav a:focus {
+	border: 1px solid var(--color-light-gray);
+	border-radius: 1rem;
+}
+
+.secondary-nav a:active {
+	color: var(--color-teal);
+}
+
+@media (min-width: 600px) {
+	.secondary-nav a {
+		padding: .5rem;
+	}
+}
 
 /* ==========================================================================
  Footer Component
@@ -281,6 +337,53 @@ footer h3 {
 	color: var(--color-white);
 }
 
+/* ==========================================================================
+ Footer Nav Component
+========================================================================== */
+
+.footer-nav ul {
+	padding-left: 0;
+	text-align: center;
+}
+
+.footer-nav li {		
+	display: block;
+}
+
+.footer-nav a {
+	color: var(--color-white);
+	display: block;
+	font-family: var(--font-secondary);
+	padding: 1rem;
+}
+
+.footer-nav a:visited {
+	color: var(--color-white);
+}
+
+.footer-nav a:hover {
+	color: var(--color-light-gray);
+	text-decoration: none;
+}
+
+.footer-nav a:focus {
+	border: 1px solid var(--color-light-gray);
+	border-radius: 1rem;
+}
+
+.footer-nav a:active {
+	color: var(--color-light-teal);
+}
+
+.footer-nav-ex {
+	background: var(--color-dark-teal);
+}
+
+@media (min-width: 600px) {
+	.footer-nav a {
+		padding: .5rem;
+	}
+}
 
 /* ==========================================================================
  Examples
@@ -433,7 +536,7 @@ input, select, textarea {
 	color: var(--color-dark-gray);
 	display: inline-block;
 	font-family: var(--font-primary);
-	margin: .2rem 0 1rem;
+	margin: .2rem 0 .5rem;
 	min-width: 50%;
 	padding: 1rem;
 	max-width: 32.5rem;
@@ -467,6 +570,8 @@ input:focus, select:focus, textarea:focus {
 	display: block;
 	font-family: var(--font-secondary);
 	font-size: var(--size-one-down);
+	vertical-align: middle;
+	margin-top: 0;
 }
 
 .error-state {
@@ -510,6 +615,37 @@ input[type="submit"]:focus {
 }
 
 input[type="submit"]:active {
+	box-shadow: var(--box-shadow-primary);
+	outline: none;
+}
+
+button[type="submit"] {
+	background-color: var(--color-blue);
+	border: none;
+	border-radius: .5rem;
+	color: var(--color-white);
+	display: inline-block;
+	font-family: var(--font-secondary);
+	font-size: var(--size-two-up);
+	font-weight: bold;
+	margin-top: .5rem;
+	padding: 1rem;
+	text-align: center;
+	transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+	background-color: var(--color-light-blue);
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:focus {
+	outline: 2px solid var(--color-light-gray);
+	outline-offset: 4px;
+}
+
+button[type="submit"]:active {
 	box-shadow: var(--box-shadow-primary);
 	outline: none;
 }
