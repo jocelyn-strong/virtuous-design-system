@@ -537,9 +537,9 @@ input, select, textarea {
 	display: inline-block;
 	font-family: var(--font-primary);
 	margin: .2rem 0 .5rem;
+	max-width: 32.5rem;
 	min-width: 50%;
 	padding: 1rem;
-	max-width: 32.5rem;
 }
 
 label {
@@ -570,8 +570,8 @@ input:focus, select:focus, textarea:focus {
 	display: block;
 	font-family: var(--font-secondary);
 	font-size: var(--size-one-down);
-	vertical-align: middle;
 	margin-top: 0;
+	vertical-align: middle;
 }
 
 .error-state {
@@ -621,8 +621,8 @@ input[type="submit"]:active {
 
 button[type="submit"] {
 	background-color: var(--color-blue);
-	border: none;
 	border-radius: .5rem;
+	border: none;
 	color: var(--color-white);
 	display: inline-block;
 	font-family: var(--font-secondary);
@@ -658,5 +658,6 @@ button[type="submit"]:active {
 	.error-message {
 		display: inline;
 		padding-left: .5rem;
+		vertical-align: middle;
 	}
 }
