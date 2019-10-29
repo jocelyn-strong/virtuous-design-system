@@ -673,7 +673,31 @@ button[type="submit"]:active {
 /* ==========================================================================
  Notification Examples
 ========================================================================== */
+.notification {
+	border-radius: 1rem;
+	color: var(--color-white);
+	display: flex;
+	justify-content: space-around;	
+	margin-bottom: 1rem;
+	padding: .5rem;
+}
+
+.notification p {
+	padding-left: .5rem;
+}
 
 .notification-error {
-	
+	background-color: var(--color-red);
+}
+
+.notification-warning {
+	background-color: var(--color-yellow);
+}
+
+.notification-neutral {
+	background-color: var(--color-light-blue);
+}
+
+.notification-success {
+	background-color: var(--color-green);
 }
