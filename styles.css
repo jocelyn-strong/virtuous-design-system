@@ -13,6 +13,9 @@ html {
 	--color-light-teal: #e5ffff;
 	--color-teal: #b2dfdb;
 	--color-white: #ffffff;
+	--color-red: #cc0000;
+	--color-yellow: #ffcc00;
+	--color-green: #39c16c;
 }
 
 /* ==========================================================================
@@ -665,4 +668,12 @@ button[type="submit"]:active {
 		padding-left: .5rem;
 		vertical-align: middle;
 	}
+}
+
+/* ==========================================================================
+ Notification Examples
+========================================================================== */
+
+.notification-error {
+	
 }
