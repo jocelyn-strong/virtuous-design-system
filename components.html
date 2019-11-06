@@ -196,9 +196,9 @@
 			
 			<form action="">
 
-				<input type="submit" class="form-submit">
+				<input type="submit">
 
-				<button type="submit" class="form-submit-button">Submit</button>
+				<button type="submit">Submit</button>
 
 			</form>
 
@@ -260,11 +260,15 @@
 		<h2>Notifications</h2>
 
 		<figure>
+
 			<h3>Error</h3>
 
 			<div class="notification notification-error">
 
-				<img src="images/error-24px.svg" alt="Error Message">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path d="M0 0h24v24H0z" fill="none"/>
+					<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+				</svg>
 
 				<p>This is a notification that something went wrong.</p>
 
@@ -272,7 +276,10 @@
 
 			<div class="notification notification-warning">
 
-				<img src="images/warning-24px.svg" alt="Warning Message">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path d="M0 0h24v24H0z" fill="none"/>
+					<path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+				</svg>
 
 				<p>This is a notification showing a warning message.</p>
 
@@ -280,7 +287,9 @@
 
 			<div class="notification notification-neutral">
 
-				<img src="images/info-24px.svg" alt="Neutral Message">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/>
+					<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+				</svg>
 
 				<p>This is a notification showing a neutral message.</p>
 
@@ -288,10 +297,72 @@
 
 			<div class="notification notification-success">
 
-				<img src="images/done-24px.svg" alt="Success Message">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path fill="none" d="M0 0h24v24H0z"/>
+					<path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+				</svg>
 
 				<p>This is a notification showing a success message!</p>
 
+			</div>
+
+		</figure>
+
+		<h2>Hero Block</h2>
+
+		<figure>
+
+			<a href="hero-block.html"><img src="images/hero-block-ex.JPG" alt="Hero Block Example" class="hero-block-ex"></a>
+			
+		</figure>
+
+		<h2>Information Cards</h2>
+
+		<figure>
+			
+			<h3>Article/Post</h3>
+
+			<a href="#">
+
+				<div class="card-article">
+
+					<h3>Beyond Vision in Healthcare</h3>
+
+					<p>How virtual-reality is shaping your healthcare experience.</p>
+
+					<p class="tertiary-text">Publication Date</p>
+					
+				</div>
+
+			</a>
+
+			<h3>Person/Profile</h3>
+
+			<div class="card-profile">
+
+				<img src="images/card-profile-pic.jpg" alt="Profile Card Picture">
+
+				<h3>Jane Doe</h3>
+
+				<p>janedoe@gmail.com</p>
+
+				<p>555-555-5555</p>
+				
+			</div>
+
+			<h3>Call to Action</h3>
+
+			<div class="card-action">
+
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path fill="none" d="M0 0h24v24H0V0z"/>
+					<path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+				</svg>
+
+				<p>Start your free trial now to start building your VR/AR experience</p>
+
+				<a href="" class="link-button">Start Building</a>
+				
 			</div>
 
 		</figure>
