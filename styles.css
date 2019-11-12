@@ -157,6 +157,12 @@ ol {
 	color: white;
 }
 
+cite {
+	font-family: var(--font-primary);
+	font-style: italic;
+	font-weight: 100;
+}
+
 blockquote {
 	background: var(--color-dark-blue);
 	border-left: 8px solid var(--color-light-blue) ;
@@ -180,6 +186,19 @@ blockquote::before {
 	left: 10px;
 	position: absolute;
 	top: -10px;
+}
+
+.featured-text {
+	font-family: var(--font-primary);
+	font-size: var(--size-three-up);
+	font-weight: 700;
+	margin: 30px;
+}
+
+.tertiary-text {
+	font-family: var(--font-primary);
+	font-weight: 100;
+	font-style: italic;
 }
 
 @media (min-width: 600px) {
@@ -398,63 +417,7 @@ footer h3 {
 }
 
 /* ==========================================================================
- Examples
-========================================================================== */
-
-figure {
-	border-color: var(--color-light-gray);
-	border-radius: 1rem;
-	border-style: solid;
-	border-width: 1px;
-	box-shadow: var(--box-shadow-primary);
-	margin-bottom: 3rem;
-	padding: 10px 20px 10px;
-}
-
-.example-font-secondary {
-	font-family: var(--font-secondary);
-}
-
-.featured-text {
-	font-family: var(--font-primary);
-	font-size: var(--size-three-up);
-	font-weight: 700;
-	margin: 30px;
-}
-
-.tertiary-text {
-	font-family: var(--font-primary);
-	font-weight: 100;
-	font-style: italic;
-}
-
-cite {
-	font-family: var(--font-primary);
-	font-style: italic;
-	font-weight: 100;
-}
-
-.footer-nav-ex {
-	background: var(--color-dark-teal);
-}
-
-.hero-block-ex {
-	max-width: 100%;
-	border-radius: .5rem;
-}
-
-.card-grid-ex {
-	max-width: 100%;
-	border-radius: .5rem;
-}
-
-.card-callouts-ex {
-	max-width: 100%;
-	border-radius: .5rem;
-}
-
-/* ==========================================================================
- Components Examples
+ Components
 ========================================================================== */
 
 /* Buttons */
@@ -558,7 +521,7 @@ dialog[open] {
 }
 
 /* ==========================================================================
- Form Examples
+ Forms
 ========================================================================== */
 
 input, select, textarea {
@@ -682,7 +645,7 @@ button[type="submit"]:active {
 }
 
 /* ==========================================================================
- Notification Examples
+ Notification Components
 ========================================================================== */
 .notification {
 	align-items: center;
@@ -766,6 +729,7 @@ Information Cards
 	border-radius: 1rem;
 	box-shadow: var(--box-shadow-primary);
 	color: var(--color-white);
+	display: block;
 	margin: 0 auto;
 	max-width: 15rem;
 	padding: 3rem;
@@ -870,7 +834,7 @@ Card Callouts
 
 .card-callouts {
 	display: grid;
-	max-width: 70rem;
+	max-width: 60rem;
 	grid-template-columns: 1fr;
 	margin: auto;
 	grid-gap: 2rem;
@@ -888,4 +852,41 @@ Card Callouts
 	.card-callouts {
 		grid-template-columns: repeat( 3, 1fr );
 	}
+}
+
+/* ==========================================================================
+ Examples
+========================================================================== */
+
+figure {
+	border-color: var(--color-light-gray);
+	border-radius: 1rem;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: var(--box-shadow-primary);
+	margin-bottom: 3rem;
+	padding: 10px 20px 10px;
+}
+
+.example-font-secondary {
+	font-family: var(--font-secondary);
+}
+
+.footer-nav-ex {
+	background: var(--color-dark-teal);
+}
+
+.hero-block-ex {
+	max-width: 100%;
+	border-radius: .5rem;
+}
+
+.card-grid-ex {
+	max-width: 100%;
+	border-radius: .5rem;
+}
+
+.card-callouts-ex {
+	max-width: 100%;
+	border-radius: .5rem;
 }
